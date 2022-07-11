@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(13, 187, 65), rgb(23, 21, 150));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+h1 {
+    color: white;
+}
+
+.file-input {
+    color: rgba(255, 255, 255, 0.39);
+    background-color: rgba(94, 94, 94, 0.411);
+    border-radius: 90px;
+}
+
+.image {
+    width: 80px;
+    margin: 0 auto 20px auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 1000px;
+}
+
+.formulario {
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    background-color: rgba(0, 0, 0, 0.281);
+    padding: 50px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px;
+    box-shadow: inset 3px 3px 7px 3px rgba(0, 0, 0, 0.192);
+}
+
+.aviso {
+    color: red;
+}
+
+.formulario .row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formulario .row .name {
+    font-size: small;
+    color: rgb(255, 255, 255);
+}
+
+.formulario .row .data {
+    border-style: none;
+    border-bottom: 1px solid rgb(255, 253, 253);
+    /* background-color: rgba(32, 32, 32, 0.288); */
+    background-color: transparent;
+    padding: 2px 0px;
+    color: rgba(255, 255, 255, 0.747);
+    /* border-radius: 5px 5px 0 0; */
+}
+
+.formulario .row .data:focus {
+    outline: none;
+}
+
+.formulario .row:last-child .data {
+    border-radius: 12px;
+    margin: 20px 0 0 0;
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.219);
+    padding: 9px 24px;
+    color: rgba(255, 255, 255, 0.747);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario .row:last-child .data:hover {
+    box-shadow: 0 0 14px 0 white;
+    border: white;
+    background-color: rgba(255, 255, 255, 0.719);
+    color: rgba(73, 73, 73, 0.747);
+}
